@@ -7,6 +7,9 @@ object myObject {
         var a:Int =10;
         println(a);
         
+        println("Hello")
+        
+        
         
         
         
