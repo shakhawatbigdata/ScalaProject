@@ -16,6 +16,22 @@ object ifElse {
   }else{
     println("Invalid input")
   }
-  //println(num);
+  
+  //Odd / Even Number
+  
+  var number:Int=50;
+  if (number%2==0){
+    println(number+ " "+"Even Number")
+    
+  }else{
+    println(number+ " "+"Odd Number")
+  }
+  
+  //=============alternative of Ternary Operators
+  
+  val res= checkIt(-20)
+  println(res)
+ 
 }
+  def checkIt(a:Int) =if (a>=0)1 else -2
 }
