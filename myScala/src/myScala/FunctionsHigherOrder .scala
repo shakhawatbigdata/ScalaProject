@@ -67,21 +67,42 @@ In other words we can say a function which works with function
   
     //=======Function Currying=====================================
 //multiple arguments into a function that takes a single argument.
+//  object FunctionsHigherOrder  {
+//      def add(a:Int)(b:Int) = {  
+//        a+b  
+//    }  
+//  def main(args:Array[String]){
+//    
+//    var result = add(10)(10)  
+//        println("10 + 10 = "+result)  
+//        var addIt = add(10)_  
+//        var result2 = addIt(3)  
+//        println("10 + 3 = "+result2) 
+//       
+//  }
+    //==Nested Functions==========================================
   object FunctionsHigherOrder  {
-      def add(a:Int)(b:Int) = {  
-        a+b  
+        def add(a:Int, b:Int, c:Int) = {  
+          def add2(x:Int,y:Int) = {  
+              x+y  
+        }  
+        add2(a,add2(b,c))  
     }  
+  
   def main(args:Array[String]){
-    
-    var result = add(10)(10)  
-        println("10 + 10 = "+result)  
-        var addIt = add(10)_  
-        var result2 = addIt(3)  
-        println("10 + 3 = "+result2) 
-       
+    var result = add(10,10,10)  
+    println(result)  
   }
   
+  //==Function with Variable Length Parameters =================================
   
+  def add(args: Int*) = {  
+    var sum = 0;  
+    for(a <- args) sum+=a  
+    sum  
+}  
+var sum = add(1,2,3,4,5,6,7,8,9);  
+println("Sum : " +sum);
   
   
   
@@ -102,3 +123,6 @@ In other words we can say a function which works with function
   
   
 }//END OBJECT 
+
+
+
