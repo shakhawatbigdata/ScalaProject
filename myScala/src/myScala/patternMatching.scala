@@ -12,7 +12,7 @@ object patternMatching {
     }
     // =====supperClass ================================
     
-    var result = search("Hossain")
+    var result = search(121)
     print(result)
     
   }//MainEnd

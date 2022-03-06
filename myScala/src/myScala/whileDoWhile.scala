@@ -21,12 +21,35 @@ object whileDoWhile {
   
   //=======Infinite While Loop==================
   
-  def main(args:Array[String]){
-    var x = 10
-    
-    while(true){
-      println(x);
-      x =x+5
+//  def main(args:Array[String]){
+//    var x = 10
+//    
+//    while(true){
+//      println(x);
+//      x =x+2
+//    }
+//  }
+  //============================================
+//  
+//  def main(args:Array[String]){
+//    var a =20;
+//    do{
+//      println(a);
+//      a -=1;
+//    }
+//    while(a >=0);
+//  }
+//}// Object End
+
+//=============================================
+
+ def main(args:Array[String]){
+    var a =20;
+    do{
+      println(a);
+      a +=1;
     }
+    while(true);
   }
 }// Object End
+
