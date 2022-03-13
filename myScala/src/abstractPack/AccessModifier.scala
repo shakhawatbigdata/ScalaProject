@@ -1,0 +1,7 @@
+package abstractPack
+
+
+
+object AccessModifier {
+  
+}
