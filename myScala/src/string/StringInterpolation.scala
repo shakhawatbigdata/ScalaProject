@@ -1,5 +1,5 @@
 package string
-/*/Scala offers a new mechanism to create strings from your data. 
+/*/Scala offers a new mechanism to create strings from  data  
 It is called string interpolation.
 
 Scala provides three string interpolation methods: s, f and raw.
@@ -9,24 +9,24 @@ Scala provides three string interpolation methods: s, f and raw.
 //=========================
 
 
-object StringInterpolation{  
-    def main(args:Array[String]){  
-      val name = "Hossain"
-      val age = 18.5
-      val ages = 18
-      //WITHOUT INTERPOLATION
-      println(name + " is "+ age + " years old")
-      //s sting Interpolation
-      println(s"$name   is  $age years old")
-      //f sting Interpolation //%d =int
-      println(f"$name%s  is  $ages%d years old")
-      //f sting Interpolation //%f =float. it is type save Interpolation
-      println(f"$name%s  is  $age%f years old")
-      println(s"Hello \nWorld")
-      //raw string Interpolation does not accept skip
-      println(raw"Hello \nWorld") 
-    }  
-} 
+//object StringInterpolation{  
+//    def main(args:Array[String]){  
+//      val name = "Hossain"
+//      val age = 18.5
+//      val ages = 18
+//      //WITHOUT INTERPOLATION
+//      println(name + " is "+ age + " years old")
+//      //s sting Interpolation
+//      println(s"$name   is  $age years old")
+//      //f sting Interpolation //%d =int
+//      println(f"$name%s  is  $ages%d years old")
+//      //f sting Interpolation //%f =float. it is type save Interpolation
+//      println(f"$name%s  is  $age%f years old")
+//      println(s"Hello \nWorld")
+//      //raw string Interpolation does not accept skip
+//      println(raw"Hello \nWorld") 
+//    }  
+//} 
 
 //========================
 //Without using s Method
@@ -136,3 +136,28 @@ It does not interpret special char present in the string.*/
 //object StringInterpolation {
 //  
 //}
+
+//====String interpolators can also take arbitrary expressions==========
+//== Any arbitrary expression can be embedded in ${}
+
+//object StringInterpolation{  
+//    def main(args:Array[String]){  
+//
+//        println(s"1 + 1 = ${1 + 1}") 
+//    }  
+//} 
+
+//=============================
+
+object StringInterpolation{  
+    def main(args:Array[String]){  
+
+        println(s" ${10 + 15 - 7 * 2 /2}") 
+        
+        //TO PRINT SPECIAL CHARACTER
+        
+        println(s"New offers starting at $$14.99")
+        
+        
+    }  
+} 
